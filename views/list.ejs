@@ -4,21 +4,41 @@
 <head>
   <meta charset="utf-8">
   <title>To Do List</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
-  <h1>It's a <%= day %> !</h1>
+  <h1 class="title"> <%= kindOfDay %> !</h1>
 
-  <h2>Your name is <%= name %></h2>
+  <div class="itemListContainer">
+    <ul class="listContainer">
+      <li class="item">Buy food</li>
+      <li class="item">Cook food</li>
+      <li class="item">Eat food</li>
 
-  <%if (day === "Saturday" || day === "Sunday") {%>
-    <h1 style="color: purple;">It's the weekend !</h1>
-  <%} else {%>
-    <h1 style="color: purple;">It's not the weekend :(</h1>
-  <%}%>
+      <%for (var i = 0; i < itemArray.length; i++) {%>
+      <li class="item"><%= itemArray[i] %></li>
+      <%}%>
+
+    </ul>
+
+    <form class="addItemForm" action="/addItem" method="post">
+      <input type="text" name="newItem" placeholder="New item">
+      <button type="submit" name="button">Add</button>
+    </form>
+  </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>

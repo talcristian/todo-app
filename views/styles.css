@@ -1,0 +1,42 @@
+
+
+body {
+
+}
+
+.title {
+  padding: 30px;
+  background-color: #e0e0e0;
+}
+
+.itemListContainer {
+  width: 20%;
+  margin: 30px 30px 30px 0;
+  padding: 30px;
+  background-color: #e0e0e0;
+}
+
+.item {
+  padding: 5px;
+}
+
+li.item {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.addItemForm {
+  padding: 20px;
+}
+
+.addItemForm button {
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.addItemForm input {
+  height: 30px;
+  width: 60%;
+}
