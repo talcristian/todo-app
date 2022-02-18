@@ -1,1 +1,1 @@
-app.js
+npm start app.js
