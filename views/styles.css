@@ -24,6 +24,7 @@ li.item {
   font-style: italic;
   font-weight: bold;
   font-size: 18px;
+  word-wrap: break-word;
 }
 
 .addItemForm {
